@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#BDBDBD"
+    tools:context="com.example.android.quizzie.MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:paddingBottom="36dp"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="40dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@layout/rounded_corner"
+                        >
+                        <TextView
+                            android:id="@+id/question_one_view"
+                            style="@style/textStyle"
+                            android:text = "1. If you had pogonophobia what would you be afraid of"/>
+                        <RadioGroup
+                            style="@style/radioStyle"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/question_one_view">
+                            <RadioButton
+                                android:id="@+id/radiobutton1_Q1"
+                                style="@style/radioStyle"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Beards"/>
+                            <RadioButton
+                                style="@style/radioStyle"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Imperfection"/>
+                            <RadioButton
+                                style="@style/radioStyle"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Injections"/>
+                            <RadioButton
+                                style="@style/radioStyle"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Knees"/>
+
+                        </RadioGroup>
+                    </RelativeLayout>
+                <RelativeLayout
+                    style="@style/radioStyle"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                    <TextView
+                        android:id="@+id/question_two_view"
+                        style="@style/textStyle"
+                        android:text = "2. Who would take silk as part of their job"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_two_view">
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Librarian"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Barrister"
+                            android:id="@+id/radiobutton1_Q2"
+                            />
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Sailor"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Hangman"/>
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                <TextView
+                    android:id="@+id/question_three_view"
+                    style="@style/textStyle"
+                    android:text = "3. Who won an Oscar for the African Queen"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_three_view">
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Oscar Wilde"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Peter Ustinov"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Casablanca"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Bogart"
+                            android:id="@+id/radiobutton1_Q3"
+                            />
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                <TextView
+                    android:id="@+id/question_four_view"
+                    style="@style/textStyle"
+                    android:text = "4. What was the first James Bond book"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_four_view">
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Doc Savage"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Casino Royal"
+                            android:id="@+id/radiobutton1_Q4"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Jonah"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Dr No"/>
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                <TextView
+                    android:id="@+id/question_five_view"
+                    style="@style/textStyle"
+                    android:text = "5. What kind of animal is a lurcher"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_five_view">
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Cat"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Dog"
+                            android:id="@+id/radiobutton1_Q5"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Pig"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Horse"/>
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                <TextView
+                        android:id="@+id/question_six_view"
+                        style="@style/textStyle"
+                        android:text = "6. What is the Islamic equal to the red cross"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_six_view">
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Red Crescent"
+                            android:id="@+id/radiobutton1_Q6"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Al Cross"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Cross"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Red Badge"/>
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                <TextView
+                        android:id="@+id/question_seven_view"
+                        style="@style/textStyle"
+                        android:text = "7. Who discovered radium"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_seven_view">
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Tutankamen"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="William Harvey"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Herman Hollerith"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="The Curies"
+                            android:id="@+id/radiobutton1_Q7"/>
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                <TextView
+                        android:id="@+id/question_eight_view"
+                        style="@style/textStyle"
+                        android:text = "8. Triskadeccaphobia is the fear of what"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_eight_view">
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Cockroaches"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Number 13"
+                            android:id="@+id/radiobutton1_Q8"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Being Cold"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Buried Alive"/>
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                <TextView
+                        android:id="@+id/question_nine_view"
+                        style="@style/textStyle"
+                        android:text = "9. Ictheologists study what"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_nine_view">
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Fish"
+                            android:id="@+id/radiobutton1_Q9"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Frog"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Ice"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="stones"/>
+
+                    </RadioGroup>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@layout/rounded_corner"
+                    android:layout_margin="4dp">
+                <TextView
+                        android:id="@+id/question_ten_view"
+                        style="@style/textStyle"
+                        android:text = "10. What is a Winston Churchill"/>
+                    <RadioGroup
+                        style="@style/radioStyle"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/question_ten_view"
+                        >
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Pillar"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Sugar"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Cigar"
+                            android:id="@+id/radiobutton1_Q10"/>
+                        <RadioButton
+                            style="@style/radioStyle"
+                            android:text="Beam"/>
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="Submit"
+        android:onClick="submitQuiz"
+        />
+    </RelativeLayout>
